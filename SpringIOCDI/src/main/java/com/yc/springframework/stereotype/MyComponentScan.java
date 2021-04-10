@@ -1,0 +1,16 @@
+package com.yc.springframework.stereotype;
+
+import java.lang.annotation.*;
+
+/**
+ * @program: SpringDemo
+ * @description:
+ * @author: 阙霞
+ * @create: 2021-04-05 11:36
+ */
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.TYPE})
+@Documented
+public @interface MyComponentScan {
+    String[] basePackageClasses() default {};
+}
